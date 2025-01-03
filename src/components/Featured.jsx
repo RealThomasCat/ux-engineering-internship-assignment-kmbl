@@ -1,14 +1,21 @@
 import React from "react";
 import MonthlyTrial from "./MonthlyTrial";
+import LifetimeFree from "./LifetimeFree";
+import ActivMoney from "./ActivMoney";
 
 function Featured() {
   return (
-    <div className="max-w-[1440px] mx-auto px-[12.063rem] bg-[##F7FAFC] py-[7.5rem]">
-      <div>
-        <MonthlyTrial />
-      </div>
+    <div className="w-full bg-[#F7FAFC] flex justify-center">
+      <div className="max-w-[1440px] w-full lg:px-0 px-4 py-[7.5rem] flex justify-center">
+        <div className="max-w-[65.375rem] w-full flex flex-col gap-6">
+          <MonthlyTrial />
 
-      <div></div>
+          <div className="w-full flex sm:flex-row flex-col justify-center gap-6">
+            <LifetimeFree />
+            <ActivMoney />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
