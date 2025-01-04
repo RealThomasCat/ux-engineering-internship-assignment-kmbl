@@ -3,7 +3,7 @@ import Logo from "./Logo";
 
 function Navbar() {
   return (
-    <div className="lg:flex hidden w-full bg-white bg-opacity-75 h-20 justify-center items-center fixed backdrop-blur-[25px] z-50">
+    <div className="md:flex hidden w-full bg-white bg-opacity-75 h-20 justify-center items-center fixed backdrop-blur-[25px] z-50">
       <div className="max-w-[1440px] w-full flex items-center justify-between px-[5.625rem]">
         <Logo />
 
