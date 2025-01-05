@@ -3,7 +3,7 @@ import DebitCardImage from "../assets/DebitCardImage.png";
 
 function LifetimeFree() {
   return (
-    <div className="bg-white xl:max-w-[31.938rem] h-[35.188rem] w-full flex flex-col justify-between card-shadow rounded-3xl pt-10 overflow-clip">
+    <div className="group bg-white xl:max-w-[31.938rem] h-[35.188rem] w-full flex flex-col justify-between card-shadow rounded-3xl pt-10 overflow-clip">
       <div className="md:px-10 px-5 pb-10 flex flex-col gap-2">
         <div className="w-full flex flex-col items-start gap-2">
           <h1 className="w-full font-bold md:text-[2rem] text-[1.75rem] md:leading-[2.375rem] leading-[2.25rem] text-left text-[#212121]">
@@ -22,12 +22,14 @@ function LifetimeFree() {
         </p>
       </div>
 
-      <div className="max-h-[18.125rem]  overflow-clip w-full">
-        <img
-          src={DebitCardImage}
-          alt="Debit Card Image"
-          className="relative h-[28.938rem] min-w-[43.356rem] right-[170px] bottom-[105px] hover:scale-125 duration-300"
-        />
+      <div className="max-h-[18.125rem] overflow-clip w-full">
+        <div className="card-origin group-hover:scale-[1.3] ease-out duration-300">
+          <img
+            src={DebitCardImage}
+            alt="Debit Card Image"
+            className="relative h-[28.938rem] min-w-[43.356rem] right-[170px] bottom-[105px]"
+          />
+        </div>
       </div>
     </div>
   );
