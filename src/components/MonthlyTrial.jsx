@@ -1,12 +1,13 @@
 import React from "react";
-import RectangleVector from "../assets/RectangleVector.svg";
 import Temp from "../assets/temp.png";
 
 function MonthlyTrial() {
   return (
     <div className="w-full bg-white text-black min-h-[22.5rem] rounded-3xl card-shadow flex gap-6 md:pr-10">
       <div className="md:flex hidden h-full max-w-[31.938rem] w-full overflow-clip justify-center items-center">
-        <img src={Temp} alt="Image" className="w-full object-fill" />
+        <div className="">
+          <img src={Temp} alt="Image" className="w-full object-fill" />
+        </div>
       </div>
 
       <div className="w-full h-fit pt-10 md:pl-0 px-5 text-black flex flex-col gap-4">
@@ -25,7 +26,7 @@ function MonthlyTrial() {
           Blinkit, Swiggy Instamart, BookMyShow, and EazyDiner.
         </p>
 
-        <div className="md:hidden max-h-[18.125rem] h-full flex w-full overflow-clip justify-center items-center">
+        <div className="md:hidden max-h-[18.125rem] h-full flex w-full overflow-clip justify-center items-center bg-red-400">
           <img src={Temp} alt="Image" className="max-h-[18.125rem] h-full" />
         </div>
       </div>

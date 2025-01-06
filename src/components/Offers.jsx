@@ -1,6 +1,6 @@
 import React from "react";
 import OfferCard from "./OfferCard";
-import OfferIcon1 from "../assets/offerIcon1.svg";
+import OfferIcon1 from "../assets/offerIcon1.png";
 import OfferIcon2 from "../assets/offerIcon2.svg";
 import OfferIcon3 from "../assets/offerIcon3.png";
 import OfferIcon4 from "../assets/offerIcon4.svg";
